@@ -7,7 +7,7 @@ project(quantumcode)
 
 file(GLOB_RECURSE SOURCES "source/*.cpp")
 file(GLOB_RECURSE HEADERS "source/*.hpp")
-file(GLOB_RECURSE quantumcode "source/*.stk")
+file(GLOB_RECURSE quantumcode "source/*.qc")
 
 add_executable(quantumcode ${SOURCES} ${HEADERS} ${quantumcode})
 
