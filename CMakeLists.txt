@@ -9,7 +9,11 @@ file(GLOB_RECURSE SOURCES "source/*.cpp")
 file(GLOB_RECURSE HEADERS "source/*.hpp")
 file(GLOB_RECURSE quantumcode "source/*.qc")
 
+
 add_executable(quantumcode ${SOURCES} ${HEADERS} ${quantumcode})
+
+
+
 
 source_group("quantumcode Files" FILES ${quantumcode})
 
@@ -20,7 +24,3 @@ set_target_properties(quantumcode PROPERTIES
         CXX_STANDARD_REQUIRED OFF
         CXX_EXTENSIONS OFF
 )
-
-if(NOT EXISTS ${PROJECT_BINARY_DIR}/.gitignore)
-  file(WRITE ${PROJECT_BINARY_DIR}/.gitignore "*")
-endif()
