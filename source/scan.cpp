@@ -5,6 +5,7 @@
 int Scan::Line = 1;
 int Scan::Putback = 0;
 std::ifstream *Scan::Infile = NULL;
+struct token Scan::Token = {T_EOF, -1};
 
 Scan::Scan(){
 

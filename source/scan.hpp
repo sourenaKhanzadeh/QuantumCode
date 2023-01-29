@@ -11,7 +11,7 @@ struct token{
 };
 
 enum{
-    T_PLUS, T_MINUS, T_STAR, T_SLASH, T_INTLIT
+    T_PLUS, T_MINUS, T_STAR, T_SLASH, T_INTLIT, T_EOF
 };
 
 class Scan{
@@ -26,10 +26,10 @@ class Scan{
         static int chrpos(std::string s, int c);
         static int Line;
         static int Putback;
+        static struct token Token;
         static std::ifstream *Infile;
         void scanfile();
 };
-
 
 
 
